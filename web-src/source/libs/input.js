@@ -37,6 +37,10 @@ Input.isKeyPressed = function isKeyPressed(key) {
     return registeredKeys[key];
 };
 
+Input.areBothKeysPressed = function areBothKeysPressed(key01, key02) {
+    return registeredKeys[key01] && registeredKeys[key02];
+};
+
 /**
  * Exporta a API
  */
