@@ -1,27 +1,46 @@
 .window {
     box-sizing: border-box;
     border: 1px solid blue;
-    width: 600px;
-    height: 400px;
+
+
     transform-style: preserve-3d;
-    perspective: 400px;
+
     position: absolute;
-    top: calc(50vh - 300px);
-    left: calc(50vw - 200px);
+
+
     overflow: hidden;
 }
-
+.camera {
+    width: 600px;
+    height: 600px;
+}
 .plano {
     width: 600px;
     height: 600px;
     /*background-image: url('https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19001752/Wallpaper-IngridMika-ContactGrid55-1.jpg');*/
-    background-image: url('http://www.mariouniverse.com/wp-content/img/maps/snes/smk/donutplains-3.png');
+    background-image: url('./assets/donutplains-3.png');
     /*transform: rotateX(60deg) rotateZ(25deg);*/
     background-color: rgba(0,0,0,.5);
+}
+
+.plano2 {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0,0,150,.5);
 }
 
 .bloco {
     width: 20px;
     height: 20px;
     background-color: pink;
+    position: relative;
 }
+
+.side {
+    position: absolute;
+
+}
+.s01 {}
+.s02 {}
+.s03 {}
+.s04 {}
