@@ -5,3 +5,6 @@
 
 @TODO lib para captar inputs do teclado
 @TODO checar se precisa de uma lib para emitir eventos
+
+vector lib
+http://victorjs.org/

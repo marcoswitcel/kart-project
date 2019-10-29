@@ -4,14 +4,17 @@
   "description": "Pequeno projeto escrito por João Marcos",
   "main": "src/index.js",
   "scripts": {
-    "dev" : "webpack --mode=development --config webpack.config.js",
-    "prod" : "webpack --mode=production --config webpack.config.js",
+    "dev": "webpack --mode=development --config webpack.config.js",
+    "prod": "webpack --mode=production --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "João Marcos",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "matter-js": "^0.14.2",
+    "victor": "^1.1.0"
+  },
   "devDependencies": {
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
