@@ -5,6 +5,10 @@ import SceneBuilder, { Camera, World, Block } from './libs/scene-builder';
 import Vector2D from 'victor';
 import Matter from 'matter-js';
 
+
+const WORLD_WIDTH = 1024;
+const WORLD_HEIGHT = 1024;
+
 const Bodies = Matter.Bodies;
 {
 
@@ -19,7 +23,7 @@ const Bodies = Matter.Bodies;
     engine.world.gravity.x = 0;
 
     const worldInstance = engine.world;
-    const box = Bodies.rectangle(50,50,100,200, {friction:1, speed: 0});
+    const box = Bodies.rectangle(Math.floor(WORLD_WIDTH/2),Math.floor(WORLD_HEIGHT/2),100,200, {friction:1, speed: 0});
 
     World.add(worldInstance,  [ box ]);
 
@@ -107,7 +111,7 @@ const world = new World({
     yCoord : 0,
     translateX:50,
     translateY: 0,
-    dimensions: [ 1024, 1024 ], 
+    dimensions: [ WORLD_WIDTH, WORLD_HEIGHT ], 
     entities: [
         block
     ]
