@@ -1,6 +1,6 @@
 {
     "require": {
-        "react/http": "^0.8.4",
+        "react/http": "^1.7.0",
         "clue/stdio-react": "^2.3"
     }
 }
